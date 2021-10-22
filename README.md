@@ -1,16 +1,24 @@
-# Project Name
-Project description
+# Trigger file for FIS statements
+Create a Trigger File that is CSV formatted containing File Name and File Size for uploading statements to FIS
+Note if looking for a file/s with no ext use * IE -SourceFileExt "*"
+Exit Code 30 = Unable to access the folder
+Tested on 09/28/2021
+Written By David Cornelius
+
+
+# Prerequisites
+* OpCon
+* Powershell 5.1
+
+# Instructions
+```
+OpConTriggerFile.ps1 -SourceLocation "C:\ProgramData\OpConxps\Statements" -SourceFileExt "*.zip" -TRGFileName "MDR009"
+```
 
 # Disclaimer
 No Support and No Warranty are provided by SMA Technologies for this project and related material. The use of this project's files is on your own risk.
 
 SMA Technologies assumes no liability for damage caused by the usage of any of the files offered here via this Github repository.
-
-# Prerequisites
-
-
-# Instructions
-
 
 # License
 Copyright 2019 SMA Technologies
